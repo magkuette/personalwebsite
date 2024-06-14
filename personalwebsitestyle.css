@@ -1,11 +1,22 @@
 body {
     background-color: black;
     margin: 0;
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+}
+
+.projects-tab {
+    border-bottom: solid 500px white;
+    border-left: 700px;
+    border-right: 500px;
+    width: 1244px;
+    display: grid;
+    place-content: center;
 }
 
 .navigation-bar {
     background-color: rgb(90, 90, 90);
-    padding: 5px;
+    padding: 3px;
     position: fixed;
     bottom: 0; /* Moves navigation bar to bottom */
     width: 100%;
