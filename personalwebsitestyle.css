@@ -1,24 +1,25 @@
+/* The whole website background */
 body {
-    background-color: rgb(31, 31, 31);
+    background-color: black;
 }
 
-.navigation {
+/* Top banner */
+.navigation-bar {
     background-color: white;
     padding: 15px;
-    background-image: url("name-title.jpg");
-    background-position: left;
-    background-size: 290px;
-    background-repeat: no-repeat;
+}
+
+.navigation-bar-group {
     display: flex;
     justify-content: space-between;
 }
 
-.navigation-buttons {
+.navigation-links-group {
     display: flex;
 }
 
-.button {
-    /* position: relative; */
+/* About and Project links */
+.navigation-links {
     font-size: 25px;
     font-family: monospace;
     background-color: white;
@@ -26,21 +27,11 @@ body {
     border: none;
     margin: 2px 7px;
     padding: 10px 10px;
-    display: inline-block;
+    display: flex;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.button:hover {
+.navigation-links:hover {
     background-color: black;
     color: white;
-}
-
-.about {
-    position: absolute;
-    right: 15px;
-}
-
-.projects {
-    position: absolute;
-    right: 0px;
 }
