@@ -1,24 +1,23 @@
-/* The whole website background */
 body {
     background-color: black;
+    margin: 0;
 }
 
-/* Top banner */
 .navigation-bar {
-    background-color: white;
-    padding: 15px;
-}
-
-.navigation-bar-group {
-    display: flex;
-    justify-content: space-between;
+    background-color: rgb(90, 90, 90);
+    padding: 7px;
+    position: fixed;
+    bottom: 0; /* Moves navigation bar to bottom */
+    width: 100%;
 }
 
 .navigation-links-group {
     display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-/* About and Project links */
 .navigation-links {
     font-size: 25px;
     font-family: monospace;
@@ -28,10 +27,9 @@ body {
     margin: 2px 7px;
     padding: 10px 10px;
     display: flex;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: width 0.2s;
 }
 
 .navigation-links:hover {
-    background-color: black;
-    color: white;
+    width: 60px
 }
