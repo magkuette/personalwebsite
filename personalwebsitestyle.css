@@ -5,13 +5,40 @@ body {
     color: white;
 }
 
+.projects-tab-positioning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+}
+
+/* rectangle part of projects tab*/
 .projects-tab {
-    border-bottom: solid 500px white;
-    border-left: 700px;
-    border-right: 500px;
-    width: 1244px;
-    display: grid;
-    place-content: center;
+    position: relative;
+    width: 1000px; /*width of rectangle*/
+    height: 500px; /*height of rectangle*/
+    background-color: white;
+    margin: 100px auto; /* adds 100px from top and centers rectangle horizontally*/
+}
+
+/* the actual tab of the projects tab*/
+.projects-tab::before{
+    content: 'Projects';
+    position: absolute;
+    top: -20px; /* if you set this at 0, the tab will not stick out*/
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    color: black;
+}
+
+.inside-projects-tab {
+    position: relative;
+    width: 950px;
+    height: 450px;
+    background-color: rgb(199, 199, 199);
+    margin: 20px auto;
 }
 
 .navigation-bar {
@@ -26,7 +53,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .navigation-links {
