@@ -1,14 +1,90 @@
+h1 {text-align: center;}
+p {text-align: center;}
 body {
     background-color: #EEF7FF;
     margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
     color: #4D869C;
+    padding-top: 80px; /* Adjust to the height of your navigation bar */
+}
+
+.nameanimation {
+    font-size: 70px;
+    animation-name: slide;
+    animation-duration: 1.8s;
+    animation-delay: none;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate(0%, 100%);
+        opacity: 0%;
+    }
+    50% {
+        transform: translate(0%, 50%);
+        opacity: 0%;
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+.linecontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    height: 15px;
+    width: 100px;
+    background-color:#4D869C;
+    position: relative;
+    top: -200px;
+    animation-name: stretch;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes stretch {
+    from {
+        width: 100px
+    }
+    to {
+        width: 700px
+    }
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: #4D869C;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #EEF7FF;
+    border: 2px solid #4D869C;
+    width: 255px;
+    height: 85px;
+    margin-top: 15px;
+    font-size: 35px;
+    transition: 0.5s ease;
+}
+
+.button:hover {
+    background-color:#EEF7FF;
+    color: #4D869C;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px solid #4D869C;
 }
 
 .navigation-bar {
     position: fixed;
     background-color: #7AB2B2;
-    padding: 20px;
+    padding: 10px;
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -16,23 +92,26 @@ body {
 
 .navigation-links-group {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end; /* Changed 'right' to 'flex-end' */
     align-items: center;
     margin-right: 40px;
 }
 
 .navigation-links {
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     color: #EEF7FF;
     margin: 2px 15px;
     padding: 10px 10px;
     display: flex;
-    transition: ease 0.5s;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-
 .navigation-links:hover {
-    background-color:#EEF7FF;
-    color:#4D869C;
+    background-color: #EEF7FF;
+    color: #4D869C;
+}
+
+.content {
+    padding: 20px; /* Optional: Add some padding to the content area */
 }
