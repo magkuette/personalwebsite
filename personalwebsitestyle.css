@@ -1,76 +1,38 @@
 body {
-    background-color: black;
+    background-color: #EEF7FF;
     margin: 0;
-    font-family:'Courier New', Courier, monospace;
-    color: white;
-}
-
-.projects-tab-positioning {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 100vh;
-}
-
-/* rectangle part of projects tab*/
-.projects-tab {
-    position: relative;
-    width: 1000px; /*width of rectangle*/
-    height: 500px; /*height of rectangle*/
-    background-color: white;
-    margin: 100px auto; /* adds 100px from top and centers rectangle horizontally*/
-}
-
-/* the actual tab of the projects tab*/
-.projects-tab::before{
-    content: 'Projects';
-    position: absolute;
-    top: -20px; /* if you set this at 0, the tab will not stick out*/
-    width: 150px;
-    height: 50px;
-    background-color: white;
-    color: black;
-}
-
-.inside-projects-tab {
-    position: relative;
-    width: 950px;
-    height: 450px;
-    background-color: rgb(199, 199, 199);
-    margin: 20px auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #4D869C;
 }
 
 .navigation-bar {
-    background-color: rgb(90, 90, 90);
-    padding: 3px;
     position: fixed;
-    bottom: 0; /* Moves navigation bar to bottom */
+    background-color: #7AB2B2;
+    padding: 20px;
     width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .navigation-links-group {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
+    margin-right: 40px;
 }
 
 .navigation-links {
     font-size: 25px;
-    font-family: monospace;
-    background-color: white;
-    color: black;
-    border: none;
-    margin: 2px 7px;
+    text-decoration: none;
+    color: #EEF7FF;
+    margin: 2px 15px;
     padding: 10px 10px;
     display: flex;
-    transition: width 0.2s;
+    transition: ease 0.5s;
 }
+
 
 .navigation-links:hover {
-    width: 55px
-}
-
-.navigation-links:active {
-    width: 45px
+    background-color:#EEF7FF;
+    color:#4D869C;
 }
