@@ -1,5 +1,12 @@
-h1 {text-align: center;}
-p {text-align: center;}
+h1 {
+    text-align: center;
+    color:#7AB2B2
+}
+p {
+    text-align: center;
+    line-height: 1.5;
+}
+
 body {
     background-color: #EEF7FF;
     margin: 0;
@@ -9,14 +16,14 @@ body {
     padding-top: 80px; /* Adjust to the height of your navigation bar */
 }
 
-.nameanimation {
+.name-animation {
     font-size: 70px;
-    animation-name: slide;
+    animation-name: slide-up;
     animation-duration: 1.8s;
     animation-delay: none;
 }
 
-@keyframes slide {
+@keyframes slide-up {
     0% {
         transform: translate(0%, 100%);
         opacity: 0%;
@@ -56,6 +63,25 @@ body {
     }
 }
 
+.intro-animation {
+    animation-name: slide-down;
+    animation-duration: 1.8s;
+    animation-delay: none;
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translate(0%, -100%);
+        opacity: 0%;
+    }
+    50% {
+        transform: translate(0%, -50%);
+        opacity: 0%;
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
 .button-container {
     display: flex;
     justify-content: center;
@@ -72,6 +98,27 @@ body {
     margin-top: 15px;
     font-size: 35px;
     transition: 0.5s ease;
+    animation-name: fade-in-late;
+    animation-duration: 2.2s;
+    animation-delay: none;
+}
+
+@keyframes fade-in-late {
+    0% {
+        opacity: 0%
+    }
+    50% {
+        opacity: 0%
+    }
+    75% {
+        opacity: 0%
+    }
+    90% {
+        opacity: 80%
+    }
+    100% {
+        opacity: 100%
+    }
 }
 
 .button:hover {
@@ -112,6 +159,17 @@ body {
     color: #4D869C;
 }
 
-.content {
-    padding: 20px; /* Optional: Add some padding to the content area */
+.paragraph {
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-delay: none;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0%
+    }
+    100% {
+        opacity: 100%
+    }
 }
