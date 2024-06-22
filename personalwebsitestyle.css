@@ -1,6 +1,6 @@
 h1 {
     text-align: center;
-    color:#a3d3d3
+    color: #7AB2B2
 }
 p {
     text-align: center;
@@ -177,13 +177,41 @@ body {
     }
 }
 
-#dining-dollar-interface-project {
-    height: 300px;
+.python-projects {
+    display: flex;
+    justify-content: space-around, flex-end;
+    gap: 20px;
+}
+/* Every project image*/
+.project-overlay-container {
+    position: relative;
+    height: 500px;
     width: 250px;
-    transition: height 0.5s, width 0.5s;
 }
 
-#dining-dollar-interface-project:hover img {
-    height: 400px;
-    width: 350px;
+/* Every project image will have an overlay*/
+.project-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(238, 247, 255, 0.5); /* the 0.5 means 50% opacity */
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.5s ease;
 }
+
+.project-overlay-container:hover .project-overlay {
+    opacity: 1;
+}
+
+#dining-dollar-project-desc {
+    color: black;
+    opacity: 0;
+}
+
+.project-overlay-container:hover #dining-dollar-project-desc {
+    opacity: 1;
+}
+
+
