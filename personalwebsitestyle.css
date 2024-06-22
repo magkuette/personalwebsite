@@ -179,7 +179,7 @@ body {
 
 .python-projects {
     display: flex;
-    justify-content: space-around, flex-end;
+    justify-content: space-around;
     gap: 20px;
 }
 /* Every project image*/
@@ -216,5 +216,14 @@ body {
     height: 50px;
     width: 100px;
 }
+
+.project-overlay-container2 {
+    position: relative;
+}
+
+.project-overlay-container2:hover .project-overlay {
+    opacity: 1;
+}
+
 
 
