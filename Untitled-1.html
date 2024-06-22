@@ -19,7 +19,7 @@
                 </div>
             </nav>
         </div>
-        <h1 class="name-animation">Hello World!</h1>
+        <h1 id="greeting"></h1>
         <p class="intro-animation">
             Welcome to my portfolio! My name is Margaret Hermanto and I am a rising junior at the
             <br>University of Maryland, College Park studying Information Science.</br>
@@ -30,5 +30,11 @@
         <div class="linecontainer">
             <div class="line"></div>
         </div>
+        <script>
+            function displayGreeting() {
+                var userDate = new Date(); /* Get date*/
+            }
+            document.getElementsByName("greeting").innerText = displayGreeting()
+        </script>
     </body>
 </html>

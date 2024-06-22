@@ -16,7 +16,7 @@ body {
     padding-top: 80px; /* Adjust to the height of your navigation bar */
 }
 
-.name-animation {
+#greeting {
     font-size: 70px;
     animation-name: slide-up;
     animation-duration: 1.8s;
