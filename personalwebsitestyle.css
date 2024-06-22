@@ -16,6 +16,10 @@ body {
     padding-top: 80px; /* Adjust to the height of your navigation bar */
 }
 
+@media (max-width:600px) {
+    
+}
+
 #greeting {
     font-size: 70px;
     animation-name: slide-up;
