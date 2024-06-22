@@ -1,6 +1,6 @@
 h1 {
     text-align: center;
-    color:#3a4646
+    color:#a3d3d3
 }
 p {
     text-align: center;
@@ -17,7 +17,7 @@ body {
 }
 
 @media (max-width:600px) {
-
+    
 }
 
 #greeting {
