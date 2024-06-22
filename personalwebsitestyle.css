@@ -172,3 +172,14 @@ body {
         opacity: 100%
     }
 }
+
+#dining-dollar-interface-project {
+    height: 300px;
+    width: 250px;
+    transition: height 0.5s, width 0.5s;
+}
+
+#dining-dollar-interface-project:hover img {
+    height: 400px;
+    width: 350px;
+}

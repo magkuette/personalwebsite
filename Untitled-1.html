@@ -31,10 +31,23 @@
             <div class="line"></div>
         </div>
         <script>
-            function displayGreeting() {
-                var userDate = new Date(); /* Get date*/
-            }
-            document.getElementsByName("greeting").innerText = displayGreeting()
+            function displayGreeting () {
+                const userDate = new Date(); // get date
+                var hour = userDate.getHours(); // get the hour from the date
+
+                if (hour < 12) {
+                    greeting = "Good Morning"
+                }
+                else if (hour < 18) {
+                    greeting = "Good Afternoon"
+                }
+                else {
+                    greeting = "Good Evening"
+                }
+
+                return greeting;
+        }
+            document.getElementById("greeting").innerHTML = displayGreeting();
         </script>
     </body>
 </html>
