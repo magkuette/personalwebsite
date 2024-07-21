@@ -89,7 +89,6 @@ body {
 .button-container {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .button {
@@ -142,8 +141,7 @@ body {
 
 .navigation-links-group {
     display: flex;
-    justify-content: flex-end; /* Changed 'right' to 'flex-end' */
-    align-items: center;
+    justify-content: flex-end;
     margin-right: 40px;
 }
 
@@ -153,7 +151,6 @@ body {
     color: #EEF7FF;
     margin: 2px 15px;
     padding: 10px 10px;
-    display: flex;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
@@ -192,6 +189,7 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
+    /* the pictures will have this color when hovered over */
     background-color: rgba(15, 49, 78, 0.5); /* the 0.5 means 50% opacity */
     top: 0;
     bottom: 0;
@@ -208,8 +206,35 @@ body {
     opacity: 0;
 }
 
+.project-buttons-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.project-buttons {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #7AB2B2;
+    color: #EEF7FF;
+    border: 2px solid #7AB2B2;
+    width: 200px;
+    height: 60px;
+    margin: 10px;
+    padding: 10px 10px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
 .project-overlay-container:hover #dining-dollar-project-desc {
     opacity: 1;
+}
+
+.project-buttons:hover {
+    border: 2px solid #EEF7FF;
+    color: #7AB2B2;
+    background-color: #EEF7FF;
 }
 
 .desc-button {
@@ -230,3 +255,19 @@ body {
     height: 250px;
     margin-top: -50px;
 }
+
+#contact-page {
+    position: absolute;
+    background-color:#4D869C;
+    height:100vh;
+}
+
+.contact {
+    display: flex;
+    height: 100%;
+    background-color:#4D869C;
+}
+/* .contact-form {
+    display: flex;
+    flex-direction: column;
+} */
