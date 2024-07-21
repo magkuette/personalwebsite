@@ -230,17 +230,3 @@ body {
     height: 250px;
     margin-top: -50px;
 }
-
-.page-image-overlay-container {
-    position: relative;
-}
-
-.page-image-overlay {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(15, 49, 78, 0.5); /* the 0.5 means 50% opacity */
-    top: 0;
-    bottom: 0;
-}
-
