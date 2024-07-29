@@ -13,7 +13,7 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
     color: #4D869C;
-    padding-top: 80px; /* Adjust to the height of your navigation bar */
+    padding-top: 80px;
 }
 
 @media (max-width:600px) {
@@ -177,7 +177,7 @@ body {
 .python-projects {
     display: flex;
     justify-content: space-around;
-    gap: 20px;
+    margin: 10px;
 }
 /* Every project image*/
 .project-overlay-container {
@@ -193,6 +193,7 @@ body {
     background-color: rgba(15, 49, 78, 0.5); /* the 0.5 means 50% opacity */
     top: 0;
     bottom: 0;
+    /* starts off with 0 opacity */
     opacity: 0;
     transition: 0.5s ease;
 }
@@ -201,16 +202,11 @@ body {
     opacity: 1;
 }
 
-#dining-dollar-project-desc {
-    color: black;
-    opacity: 0;
-}
-
 .project-buttons-group {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 200px;
 }
 
 .project-buttons {
@@ -223,23 +219,13 @@ body {
     width: 200px;
     height: 60px;
     margin: 10px;
-    padding: 10px 10px;
     transition: background-color 0.5s ease, color 0.5s ease;
-}
-
-.project-overlay-container:hover #dining-dollar-project-desc {
-    opacity: 1;
 }
 
 .project-buttons:hover {
     border: 2px solid #EEF7FF;
     color: #7AB2B2;
     background-color: #EEF7FF;
-}
-
-.desc-button {
-    height: 50px;
-    width: 100px;
 }
 
 .project-overlay-container2 {
@@ -250,24 +236,62 @@ body {
     opacity: 1;
 }
 
+.project-overlay-container3 {
+    position: relative;
+}
+
+.project-overlay-container3:hover .project-overlay {
+    opacity: 1;
+}
+
 .page-image {
     width: 100%;
     height: 250px;
     margin-top: -50px;
+    margin-bottom: 50px;
 }
 
 #contact-page {
-    position: absolute;
-    background-color:#4D869C;
+    display: flex;
     height:100vh;
 }
 
-.contact {
+/* find out how to make go all the way to the top */
+#contact-options {
+    width: 50%;
+    height: 100vh;
+}
+
+#contact-options-placement {
     display: flex;
     height: 100%;
-    background-color:#4D869C;
 }
-/* .contact-form {
+
+#contact {
+    width: 50%;
+    height: 100vh;
+}
+
+#contact-placement {
+    display: flex;
+    height: 100%;
+}
+
+#contact-inputs {
     display: flex;
     flex-direction: column;
-} */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-input {
+    margin: 20px;
+    height: 30px;
+    width: 380px;
+}
+
+#contact-input-text {
+    margin: 20px;
+    height: 340px;
+    width: 380px;
+}
