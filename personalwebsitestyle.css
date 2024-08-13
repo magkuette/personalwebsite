@@ -1,10 +1,25 @@
 h1 {
     text-align: center;
-    color: #7AB2B2
+    color: #7AB2B2;
+    line-height: 0.1px;
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-delay: none;
+
 }
+
+.p-properties {
+    justify-content: center;
+    display: flex;
+}
+
 p {
-    text-align: center;
+    text-align: justify;
+    width: 700px;
     line-height: 1.5;
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+    animation-delay: none;
 }
 
 body {
@@ -157,12 +172,6 @@ body {
 .navigation-links:hover {
     background-color: #EEF7FF;
     color: #4D869C;
-}
-
-.paragraph {
-    animation-name: fade-in;
-    animation-duration: 0.5s;
-    animation-delay: none;
 }
 
 @keyframes fade-in {
