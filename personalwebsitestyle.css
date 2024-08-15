@@ -37,6 +37,7 @@ body {
 
 #greeting {
     font-size: 70px;
+    line-height: normal;
     animation-name: slide-up;
     animation-duration: 1.8s;
     animation-delay: none;
@@ -86,6 +87,7 @@ body {
     animation-name: slide-down;
     animation-duration: 1.8s;
     animation-delay: none;
+    text-align: center;
 }
 
 @keyframes slide-down {
@@ -253,11 +255,14 @@ body {
     opacity: 1;
 }
 
+.page-image-properties {
+    justify-content: center;
+    display: flex;
+}
 .page-image {
-    width: 100%;
-    height: 250px;
-    margin-top: -50px;
-    margin-bottom: 50px;
+    height: 450px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #contact-page {
