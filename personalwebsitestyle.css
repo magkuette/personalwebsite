@@ -1,11 +1,10 @@
 h1 {
     text-align: center;
-    color: #7AB2B2;
+    color: #141414;
     line-height: 0.1px;
     animation-name: fade-in;
     animation-duration: 0.5s;
     animation-delay: none;
-
 }
 
 .p-properties {
@@ -25,9 +24,9 @@ p {
 body {
     background-color: #EEF7FF;
     margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
-    color: #4D869C;
+    color: #3f3f3f;
     padding-top: 80px;
 }
 
@@ -36,11 +35,21 @@ body {
 }
 
 #greeting {
-    font-size: 70px;
-    line-height: normal;
+    font-size: 100px;
+    line-height: 20px;
     animation-name: slide-up;
     animation-duration: 1.8s;
     animation-delay: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title {
+    font-size: 70px;
+    line-height: 20px;
+    animation-name: slide-up;
+    animation-duration: 0.7s;
+    animation-delay: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 @keyframes slide-up {
@@ -65,7 +74,7 @@ body {
 .line {
     height: 15px;
     width: 100px;
-    background-color:#4D869C;
+    background-color:#141414;
     position: relative;
     top: -200px;
     animation-name: stretch;
@@ -83,11 +92,14 @@ body {
     }
 }
 
-.intro-animation {
+#intro-animation {
     animation-name: slide-down;
     animation-duration: 1.8s;
     animation-delay: none;
     text-align: center;
+    font-size: x-large;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 @keyframes slide-down {
@@ -109,10 +121,10 @@ body {
 }
 
 .button {
-    background-color: #4D869C;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #141414;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #EEF7FF;
-    border: 2px solid #4D869C;
+    border: 2px solid #141414;
     width: 255px;
     height: 85px;
     margin-top: 15px;
@@ -143,14 +155,14 @@ body {
 
 .button:hover {
     background-color:#EEF7FF;
-    color: #4D869C;
+    color: #141414;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border: 2px solid #4D869C;
+    border: 2px solid #141414;
 }
 
 .navigation-bar {
     position: fixed;
-    background-color: #7AB2B2;
+    background-color: #141414;
     padding: 10px;
     width: 100%;
     top: 0;
@@ -173,7 +185,7 @@ body {
 
 .navigation-links:hover {
     background-color: #EEF7FF;
-    color: #4D869C;
+    color: #141414;
 }
 
 @keyframes fade-in {
@@ -183,6 +195,12 @@ body {
     100% {
         opacity: 100%
     }
+}
+
+.animation {
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-delay: none;
 }
 
 .python-projects {
@@ -221,12 +239,12 @@ body {
 }
 
 .project-buttons {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
     text-decoration: none;
-    background-color: #7AB2B2;
+    background-color: #141414;
     color: #EEF7FF;
-    border: 2px solid #7AB2B2;
+    border: 2px solid #141414;
     width: 200px;
     height: 60px;
     margin: 10px;
@@ -235,7 +253,7 @@ body {
 
 .project-buttons:hover {
     border: 2px solid #EEF7FF;
-    color: #7AB2B2;
+    color: #141414;
     background-color: #EEF7FF;
 }
 
