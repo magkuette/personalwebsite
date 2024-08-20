@@ -22,15 +22,19 @@
         <div id="contact-page">
             <div id="contact-options">
                 <div id="contact-options-placement">
-                    <h1>Find me on other social media</h1>
+                    <h1 class="title">Contact Me</h1>
                 </div>
             </div>
             <div id="contact">
                 <div id="contact-placement">
-                    <form id="contact-inputs">
-                        <input class="contact-input" type="text" placeholder="Name">
-                        <input class="contact-input" type="email" placeholder="Email">
-                        <input id="contact-input-text" type="text" placeholder="text">
+                    <form id="contact-inputs" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="1eedeefb-f4d9-4971-8d0c-c23445cd598c">
+                        <input class="contact-input" type="text" name="name" placeholder="Name" required>
+                        <input class="contact-input" name="email" type="email" placeholder="Email" required>
+                        <textarea name="message"id="contact-input-text" required></textarea>
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                        <button class="project-buttons" type="Submit">Send!</button>
+                        <input type="hidden" name="apikey" value="1eedeefb-f4d9-4971-8d0c-c23445cd598c">
                     </form>
                 </div>
             </div>
